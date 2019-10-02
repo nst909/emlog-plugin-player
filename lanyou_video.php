@@ -1,10 +1,10 @@
 ﻿<?php
 /*
-Plugin Name: 万能解析播放器-青空网易修复版
+Plugin Name: 万能解析播放器-蓝色天空修复版
 Version: 2.0
 Plugin URL: http://xuboke.com
-Description: (修复版)由青空网易修复的蓝优万能解析播放器一个牛X的播放器
-Author: 蓝优 2019.7.1由青空网易修复接口
+Description: (修复版)由蓝色天空修复的蓝优万能解析播放器一个牛X的播放器
+Author: 蓝优 2019.7.1由蓝色天空修复接口
 Author URL: http://cache.igvps.cn
 */
 !defined('EMLOG_ROOT') && exit('access deined!');
@@ -13,7 +13,7 @@ function videoly_tool(){?>
 $(document).ready(function(){
 $(".videoly_charu").click(function(){
 //$($(".ke-edit-iframe:first").contents().find(".ke-content")).append("<div id='player' style='width:"+($('#mediawidth').val())+";height:"+($('#mediaheight').val())+"px;'></div><script type='text/javascript' src='../content/plugins/lanyou_video/Iva.js'><\/script><script>var ivaIntance = new Iva('player',{appkey:'Eyf9cXB3',video:'"+($('#mediaurl').val())+"',cover:'"+($('#mediaimg').val())+"',autoplay:"+($('#mediaauto').val())+"})<\/script>");
-$($(".ke-edit-iframe:first").contents().find(".ke-content")).append("<iframe width='100%' height='" + ($('#mediaheight').val()) + "' src='http://cache.igvps.cn/jx/index.php?url=" + ($('#mediaurl').val()) + "' scrolling='no' frameborder='0' allowfullscreen></iframe>");
+$($(".ke-edit-iframe:first").contents().find(".ke-content")).append("<iframe width='100%' height='" + ($('#mediaheight').val()) + "' src='http://jx.drgxj.com/?url=" + ($('#mediaurl').val()) + "' scrolling='no' frameborder='0' allowfullscreen></iframe>");
 
 });
 //关闭按钮
