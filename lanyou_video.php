@@ -1,18 +1,18 @@
 ﻿<?php
 /*
-Plugin Name: 万能解析播放器-蓝色天空修复版
+Plugin Name: 万能解析播放器-白云对其修复
 Version: 2.0
 Plugin URL: http://xuboke.com
-Description: (修复版)由蓝色天空修复的蓝优万能解析播放器一个牛X的播放器
+Description: (修复版)由白云修复的蓝优万能解析播放器一个牛X的播放器
 Author: 蓝优 2019.7.1由蓝色天空修复接口
-Author URL: http://cache.igvps.cn
+Author URL: http://wuy6.cn/
 */
 !defined('EMLOG_ROOT') && exit('access deined!');
 function videoly_tool(){?>
 <script>
 $(document).ready(function(){
 $(".videoly_charu").click(function(){
-//$($(".ke-edit-iframe:first").contents().find(".ke-content")).append("<div id='player' style='width:"+($('#mediawidth').val())+";height:"+($('#mediaheight').val())+"px;'></div><script type='text/javascript' src='../content/plugins/lanyou_video/Iva.js'><\/script><script>var ivaIntance = new Iva('player',{appkey:'Eyf9cXB3',video:'"+($('#mediaurl').val())+"',cover:'"+($('#mediaimg').val())+"',autoplay:"+($('#mediaauto').val())+"})<\/script>");
+//解析地址如果失效，可自行更改。
 $($(".ke-edit-iframe:first").contents().find(".ke-content")).append("<iframe width='100%' height='" + ($('#mediaheight').val()) + "' src='http://jx.drgxj.com/?url=" + ($('#mediaurl').val()) + "' scrolling='no' frameborder='0' allowfullscreen></iframe>");
 
 });
@@ -38,7 +38,7 @@ $("#videoly_con").css("display","block");
 .medimg,.medfull{display:none;}
 </style>
 <div id="videoly_box">
-<div id="videoly_title">青空解析</div> 
+<div id="videoly_title">白云解析</div> 
 <div id="videoly_con">
 <p>视频地址：<input type="text" name="mediaurl" id="mediaurl" placeholder="这里输入调用文件的地址" /></p>
 <p>设置宽度：<input type="text" name="mediawidth" id="mediawidth" value="100%" /></p>
